@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+    - name: Ensure NTP is installed
+      apt: name=ntp state=present update_cache=yes
+
+    - name: Ensure NTP is running
+      service: name=ntp state=started enabled=yes
