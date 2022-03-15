@@ -29,7 +29,7 @@ end
 - Create a file named `playbook.yml` that will be run by vagrant.
 - Describe your steps :
 
-```
+```yml
 ---
 - hosts: all
   become: true
